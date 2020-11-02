@@ -23,13 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a82c6ff6-6ed3-461d-adbe-129e4b88d113" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CustomerRequestType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/InsurerConfigurationType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/Quote.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Services/CusomerRequestProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Services/EngineQuoteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Services/IEngineQuoteService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/ICarItemCoverCost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/ICarItemType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sb/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.sb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.sb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CustomerRequestType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CustomerRequestType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/InsurerConfigurationType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Domain/InsurerConfigurationType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.ConsoleApp1/Services/EngineQuoteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sb.ConsoleApp1/Services/EngineQuoteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.ConsoleApp1/sb.ConsoleApp1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/sb.ConsoleApp1/sb.ConsoleApp1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.app1/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.app1/sb.app1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sb.sln" beforeDir="false" afterPath="$PROJECT_DIR$/sb.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +49,17 @@
       <list>
         <option value="$PROJECT_DIR$/sb.ConsoleApp1/Program.cs" />
         <option value="$PROJECT_DIR$/TestProject1/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CustomerRequestType.cs" />
         <option value="$PROJECT_DIR$/sb.ConsoleApp1/Services/CusomerRequestProvider.cs" />
-        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/InsurerConfigurationType.cs" />
         <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/Quote.cs" />
         <option value="$PROJECT_DIR$/sb.ConsoleApp1/Services/IEngineQuoteService.cs" />
-        <option value="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CarItemCoverCostType.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CarItem.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/ICarItem.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/InsurerConfigurationType.cs" />
         <option value="$PROJECT_DIR$/sb.ConsoleApp1/Services/EngineQuoteService.cs" />
+        <option value="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/ICarItemCoverCost.cs" />
+        <option value="$PROJECT_DIR$/sb.ConsoleApp1/Domain/CustomerRequestType.cs" />
       </list>
     </option>
   </component>
@@ -99,13 +108,14 @@
       <option name="presentableId" value="Default" />
       <updated>1604325881563</updated>
       <workItem from="1604325885442" duration="4866000" />
+      <workItem from="1604348214669" duration="2410000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -117,6 +127,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -211,6 +222,14 @@
     </state>
     <state x="327" y="192" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050/-854.-1080.3840.1080@0.0.1680.1050" timestamp="1604325882361" />
     <state x="-107" y="-864" key="Rider.ProjectTemplateDialog.Size/0.23.1680.1027/-854.-1057.3840.1057@-854.-1057.3840.1057" timestamp="1604327640491" />
+    <state x="541" y="-957" width="2342" height="857" key="VCS.FileHistoryDialog" timestamp="1604349536140">
+      <screen x="-854" y="-1057" width="3840" height="1057" />
+    </state>
+    <state x="541" y="-957" width="2342" height="857" key="VCS.FileHistoryDialog/0.23.1680.1027/-854.-1057.3840.1057@-854.-1057.3840.1057" timestamp="1604349536140" />
+    <state x="1312" y="-789" key="Vcs.Push.Dialog.v2" timestamp="1604349454933">
+      <screen x="-854" y="-1057" width="3840" height="1057" />
+    </state>
+    <state x="1312" y="-789" key="Vcs.Push.Dialog.v2/0.23.1680.1027/-854.-1057.3840.1057@-854.-1057.3840.1057" timestamp="1604349454933" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -227,19 +246,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs</url>
-          <line>43</line>
-          <properties documentPath="$PROJECT_DIR$/TestProject1/QuoteEngine/Test_QuoteEngine.cs" initialLine="43">
-            <startOffsets>
-              <option value="1696" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1731" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

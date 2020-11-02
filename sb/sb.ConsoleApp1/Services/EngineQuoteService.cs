@@ -17,9 +17,10 @@ namespace sb.ConsoleApp1.Services
 
                 if (percentage != 0)
                 {
-
-                    var matched1 = top3.Where(r => insurer.Parts.Contains(r.ItemName)).ToList();
-                    var cost = matched1.Sum(x => (decimal) x.ItemCost) * percentage;
+                    var matchedItems = top3.Where(r => insurer.CarPartsCovered.Select(x => x.ItemName).Contains(r.ItemName))
+                        .ToList();
+                    
+                    var cost = matchedItems.Sum(x => (decimal) x.ItemCost) * percentage;
 
                     result.Add(
                         new Quote()
@@ -33,18 +34,17 @@ namespace sb.ConsoleApp1.Services
 
 
             return result.ToArray();
-
-           
         }
 
-        private decimal GetPercentage(List<CustomerRequestType.CoverItem> top3, InsurerConfigurationType.Insurer ins)
+        private decimal GetPercentage(List<CustomerRequestType.CarItemCoverCost> top3,
+            InsurerConfigurationType.Insurer ins)
         {
             top3 = top3.OrderByDescending(x => x.ItemCost).ToList();
 
-            var matched = top3.Where(r => ins.Parts.Contains(r.ItemName)).ToList();
+            var matched = top3.Where(r => ins.CarPartsCovered.Select(x=> x.ItemName).Contains(r.ItemName)).ToList();
 
             if (matched.Count == 2)
-                return  (decimal) 0.10;
+                return (decimal) 0.10;
             else if (matched.Count == 1)
             {
                 if (matched[0].ItemName == top3[0].ItemName)
@@ -61,15 +61,15 @@ namespace sb.ConsoleApp1.Services
                 return (decimal) 0;
             }
         }
-        
-        private decimal GetSum(List<CustomerRequestType.CoverItem> top3, InsurerConfigurationType.Insurer ins)
+
+        private decimal GetSum(List<CustomerRequestType.CarItemCoverCost> top3, InsurerConfigurationType.Insurer ins)
         {
             top3 = top3.OrderByDescending(x => x.ItemCost).ToList();
 
-            var matched = top3.Where(r => ins.Parts.Contains(r.ItemName)).ToList();
+            var matched = top3.Where(r => ins.CarPartsCovered.Select(x=> x.ItemName).Contains(r.ItemName)).ToList();
 
             if (matched.Count == 2)
-                return  (decimal) 0.10;
+                return (decimal) 0.10;
             else if (matched.Count == 1)
             {
                 if (matched[0].ItemName == top3[0].ItemName)
@@ -86,6 +86,5 @@ namespace sb.ConsoleApp1.Services
                 return (decimal) 0;
             }
         }
-        
     }
 }
