@@ -31,13 +31,26 @@
           <e p="CusomerRequestProvider.cs" t="Include" />
           <e p="EngineQuoteService.cs" t="Include" />
           <e p="IEngineQuoteService.cs" t="Include" />
-          <e p="Rules" t="Include" />
+          <e p="Rules" t="Include">
+            <e p="CostCalculatorRule1.cs" t="Include" />
+            <e p="FilterRequestItemsRule1.cs" t="Include" />
+            <e p="ICostCalculatorRule.cs" t="Include" />
+            <e p="IFilterRequestItemsRule.cs" t="Include" />
+            <e p="IMatchingEngineRule.cs" t="Include" />
+            <e p="MatchingEngineRule1.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="sb.sln" t="IncludeFlat" />
       <e p="src" t="Include" />
       <e p="TestProject1" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Common" t="Include">
+          <e p="DataGenerator_sample1.cs" t="Include" />
+        </e>
+        <e p="InMemoryIntegrationTest" t="Include">
+          <e p="IntegrationTest_CostCalculatorRule1.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -47,6 +60,10 @@
         </e>
         <e p="QuoteEngine" t="Include">
           <e p="Test_QuoteEngine.cs" t="Include" />
+        </e>
+        <e p="Rules" t="Include">
+          <e p="Test_FilterRequestItemRule1.cs" t="Include" />
+          <e p="Test_MatchingEngineRule1.cs" t="Include" />
         </e>
         <e p="TestProject1.csproj" t="IncludeRecursive" />
       </e>
